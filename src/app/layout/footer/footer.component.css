@@ -6,7 +6,7 @@ footer {
 	text-align: center;
 }
 
-.footer-top-border {
+.border-orange-weak {
 	height: 1px;
 	background: var(--orange-gradient);
 	opacity: .5;
