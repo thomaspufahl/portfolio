@@ -18,6 +18,10 @@ const routes: Routes = [
 			{
 				path: 'home', //PAGE USER-LOGGED
 				loadChildren: () => import('@modules/user/user.module').then((m): typeof UserModule => m.UserModule)
+			},
+			{
+				path: '**',
+				redirectTo: ''
 			}
 		]
 	}
