@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'visitor-title',
-	template: `<h1> {{title}} </h1>`,
+	template: `<h3> {{title}} </h3>`,
 	styleUrls: ['./title.component.css']
 })
 export class TitleComponent {
