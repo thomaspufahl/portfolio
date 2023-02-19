@@ -15,7 +15,7 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 		AppComponent,
 		HeaderComponent,
 		MainComponent,
-		FooterComponent
+		FooterComponent,
 	],
 	imports: [
 		BrowserModule,

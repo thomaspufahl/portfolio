@@ -6,6 +6,8 @@ import { VisitorComponent } from './pages/visitor/visitor.component';
 import { TitleComponent } from './components/title/title.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
+import { CardComponent } from '@shared/components/card/card.component';
+
 
 @NgModule({
 	declarations: [
@@ -15,7 +17,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 	],
 	imports: [
 		CommonModule,
-		VisitorRoutingModule
+		VisitorRoutingModule,
+		CardComponent,
 	]
 })
 export class VisitorModule { }
