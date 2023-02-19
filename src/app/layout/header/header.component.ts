@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
 	selector: 'layout-header',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
 	styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+	showMenu: boolean = false;
+	openMenu(): void {
+		this.showMenu = !this.showMenu;
+	}
 
 }

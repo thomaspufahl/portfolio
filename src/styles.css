@@ -18,6 +18,10 @@ body {
 	margin: 0;
 }
 
+li {
+	list-style: none;
+}
+
 .border-orange-strong {
 	width: 100%;
 	height: 1px;

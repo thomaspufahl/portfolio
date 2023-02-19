@@ -1,17 +1,14 @@
 <header class="nav-container">
-	<div class="navbar-container">
+	<nav class="navbar-container">
 		<a href="#" id="logo">
 			<div class="border-orange-strong"></div>
 			<div class="border-orange-strong"></div>
 			<h2>Thomas Pufahl</h2>
 		</a>
-		<nav>
+		<div class="menu">
 			<div class="items">
 				<div class="center">
-					<a href="#" class="item">
-						<!-- <div class="border-orange-strong"></div> -->
-						Projects
-					</a>
+					<a href="#" class="item">Projects</a>
 					<a href="#" class="item">Resume</a>
 					<a href="#" class="item">Contact</a>
 				</div>
@@ -20,7 +17,35 @@
 					<a href="#" class="item">Register</a>
 				</div>
 			</div>
-		</nav>
-	</div>
+		</div>
+		<div class="hamburger-menu">
+			<button (click)="openMenu()">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</button>
+			<aside *ngIf="showMenu">
+				<nav class="nav-hamburger-menu">
+					<ul class="ul-hamburger-menu">
+						<li class="item">
+							<a href="#">Register</a>
+						</li>
+						<li class="item">
+							<a href="#">Login</a>
+						</li>
+						<li class="item">
+							<a href="#">Projects</a>
+						</li>
+						<li class="item">
+							<a href="#">Resume</a>
+						</li>
+						<li class="item">
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		</div>
+	</nav>
 	<div class="border-orange-strong"></div>
 </header>

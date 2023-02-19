@@ -18,14 +18,13 @@ a {
 	align-items: center;
 }
 
-nav {
+.menu {
 	display: flex;
 	width: 100%;
 	-webkit-box-align: center;
 	align-items: center;
 	-webkit-box-flex: 0;
 	flex: 0 auto;
-
 }
 
 .items {
@@ -72,4 +71,81 @@ h2 {
 	-webkit-text-fill-color: transparent;
 	transform: scale(1.08);
 	transition: all 0.2s ease;
+}
+
+.hamburger-menu {
+	display: none;
+}
+
+aside {
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	padding: 50px 10px;
+	width: min(75vw, 400px);
+	height: 100vh;
+	outline: 0px;
+	background-color: var(--dark);
+	box-shadow: -10px 0px 30px -15px var(--dark);
+	z-index: 9;
+}
+
+@media (max-width: 768px) {
+
+	.menu {
+		display: none;
+	}
+
+	.hamburger-menu {
+		display: flex;
+	}
+
+	.nav-hamburger-menu {
+		display: flex;
+		justify-content: center;
+	}
+
+	.ul-hamburger-menu {
+		display: flex;
+		flex-direction: column;
+		-webkit-box-align: center;
+		align-items: center;
+		-webkit-box-flex: 1;
+		text-align: center;
+		justify-self: center;
+		flex: 1;
+		gap: 2rem;
+	}
+
+	button {
+		display: flex;
+		flex-direction: column;
+		width: 3rem;
+		height: 1.8rem;
+		border: 0;
+		background: transparent;
+		gap: .65rem;
+		position: relative;
+		z-index: 10;
+	}
+
+	button>div {
+		background-color: var(--white);
+		height: 1px;
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 375px) {
+	aside {
+		text-align: center;
+		width: min(75vw, 200px);
+	}
 }
