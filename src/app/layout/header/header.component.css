@@ -57,7 +57,9 @@ nav {
 	grid-column-gap: 24px;
 }
 
-span {
+h2 {
+	margin-top: 02px;
+	margin-bottom: 0px;
 	white-space: pre;
 	font-weight: 900;
 	font-size: 1.2rem;
