@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
+	standalone: true,
 	selector: 'visitor-title',
 	template: `<h3> {{title}} </h3>`,
 	styleUrls: ['./title.component.css']

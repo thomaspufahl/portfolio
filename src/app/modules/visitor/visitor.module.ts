@@ -3,22 +3,22 @@ import { CommonModule } from '@angular/common';
 
 import { VisitorRoutingModule } from './visitor-routing.module';
 import { VisitorComponent } from './pages/visitor/visitor.component';
-import { TitleComponent } from './components/title/title.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
 import { CardComponent } from '@shared/components/card/card.component';
+import { TitleComponent } from '@shared/components/title/title.component';
 
 
 @NgModule({
 	declarations: [
 		VisitorComponent,
-		TitleComponent,
 		ProjectsComponent,
 	],
 	imports: [
 		CommonModule,
 		VisitorRoutingModule,
 		CardComponent,
+		TitleComponent,
 	]
 })
 export class VisitorModule { }
