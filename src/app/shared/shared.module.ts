@@ -9,13 +9,12 @@ import { EditButtonComponent } from './components/edit-button/edit-button.compon
 
 @NgModule({
 	declarations: [
-	
-    EditButtonComponent
-  ],
+	],
 	imports: [
 		CommonModule,
 		CardComponent,
 		TitleComponent,
+		EditButtonComponent
 	]
 })
 export class SharedModule { }

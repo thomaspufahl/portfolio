@@ -7,6 +7,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 
 import { CardComponent } from '@shared/components/card/card.component';
 import { TitleComponent } from '@shared/components/title/title.component';
+import { EditButtonComponent } from '@shared/components/edit-button/edit-button.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { TitleComponent } from '@shared/components/title/title.component';
 		UserRoutingModule,
 		CardComponent,
 		TitleComponent,
+		EditButtonComponent,
 	]
 })
 export class UserModule { }
